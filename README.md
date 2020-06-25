@@ -5,6 +5,12 @@ The Reedelk transformer plugin allows to transform the upstream request body or 
 
 ## Configuration
 
+### In order to use the plugin, you must register the plugin in the kong.conf file by adding the plugin in the plugins property list
+
+```
+plugins = reedelk-transformer
+```
+
 This plugin is compatible with requests with the following protocols:
 
 * HTTP
