@@ -62,4 +62,4 @@ $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 
 ## Credits
 
-made by Reedelk
+made by [Reedelk](https://www.reedelk.com/)
