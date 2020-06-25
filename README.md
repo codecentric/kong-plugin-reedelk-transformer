@@ -47,6 +47,7 @@ You can use the `http://localhost:8001/plugins` endpoint to enable this plugin o
 $ curl -X POST http://kong:8001/plugins \
     --data "name=reedelk-transformer" \
     --data "consumer_id={consumer_id}"
+```
 
 ## Building and packaging using LuaRocks
 
