@@ -13,8 +13,10 @@ plugins = reedelk-transformer
 
 This plugin is compatible with requests with the following protocols:
 
-* HTTP
-* HTTPS
+* http
+* https
+
+This plugin is compatible with DB-less mode.
 
 ### Enabling the plugin on a Service
 
