@@ -1,6 +1,6 @@
 # Kong Plugin Reedelk Transformer
 
-The Reedelk transformer plugin allows to transform the upstream request body or downstream request body by invoking a Reedelk REST flow before hitting the upstream server or before sending the response downstream back to the client. The plugin allows to apply upstream and downstream transformation together as well.
+The Reedelk transformer plugin allows to transform the upstream request body or downstream response body by invoking a Reedelk REST flow before hitting the upstream server or before sending the downstream response back to the client. The plugin allows to apply upstream and downstream transformation together as well.
 
 
 ## Configuration
