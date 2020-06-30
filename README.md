@@ -46,7 +46,7 @@ This plugin is compatible with DB-less mode.
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
+`service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform/
 
 #### Without a database:
 Add the following to the kong.yml configuration file:
@@ -71,7 +71,7 @@ Add the following to the kong.yml configuration file:
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
+`route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform/
 
 #### Without a database:
 Add the following to the kong.yml configuration file:
