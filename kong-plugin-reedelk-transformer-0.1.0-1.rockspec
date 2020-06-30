@@ -5,7 +5,7 @@ local pluginName = package:match("^kong%-plugin%-(.+)$")
 
 supported_platforms = {"linux", "macosx"}
 source = {
-  url = "http://github.com/Kong/kong-plugin.git",
+  url = "https://github.com/reedelk/kong-plugin-reedelk-transformer.git",
   tag = "0.1.0"
 }
 
