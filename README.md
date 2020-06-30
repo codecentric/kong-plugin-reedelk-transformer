@@ -85,15 +85,17 @@ Add the following to the kong.yml configuration file:
      downstream_transformer_url: "http://myhost/downstream/transform"
 ```
 
-## Building and Packaging using LuaRocks
+## Building and Packaging
 
-1. Build the plugin locally (based on the `.rockspec` in the current directory)
+1. The [LuaRocks](http://luarocks.org) package manager must be [Installed](https://github.com/luarocks/luarocks/wiki/Download).
+
+2. Build the plugin locally (based on the `.rockspec` in the current directory).
 
 ```bash
 $ luarocks make
 ```
 
-2. Package the plugin
+3. Package the plugin.
 
 ```bash
 $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
