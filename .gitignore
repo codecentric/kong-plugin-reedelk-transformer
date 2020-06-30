@@ -3,3 +3,4 @@ lua_modules
 .project
 .settings/
 commands.txt
+.DS_Store

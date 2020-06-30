@@ -15,7 +15,7 @@ function _M.execute(conf)
 
   -- Call Reedelk flow
   body, respcode, respheaders = http.request {
-    method = kong.request.get_method(),
+    method = 'POST',
     url = conf.upstream_transformer_url,
     source = ltn12.source.string(payload),
     headers = kong.request.get_headers(),

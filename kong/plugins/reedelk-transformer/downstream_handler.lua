@@ -47,7 +47,7 @@ function _M.handle_body(conf)
 
   -- Call Reedelk flow
   body, respcode, respheaders = http.request {
-  	method = kong.request.get_method(),
+  	method = 'POST',
   	url = conf.downstream_transformer_url,
   	source = ltn12.source.string(chunks),
   	sink = ltn12.sink.table(respbody),
