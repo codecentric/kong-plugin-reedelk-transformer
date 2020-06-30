@@ -2,7 +2,10 @@
 
 The Reedelk transformer plugin allows to transform the upstream request body or downstream response body by invoking a Reedelk REST flow before hitting the upstream server or before sending the downstream response back to the client. The plugin allows to apply upstream and downstream transformation together as well.
 
-## Installation
+## Prerequisites for integrating Reedelk and Kong
+Please note, in order to use the Reedelk plugin for Kong, you must first install the Reedelk IntelliJ IDEA plugin.
+
+Install Reedelk IntelliJ flow designer plugin from IntelliJ Marketplace (or download it and install it from releases page). From IntelliJ Preferences > Plugin > Marketplace search ‘Reedelk’, install the plugin and restart IntelliJ.
 
 ## Installation
 
