@@ -63,13 +63,15 @@ Configure this plugin on a Route with:
 
 ## Building and Packaging using LuaRocks
 
+1. Build the plugin locally (based on the `.rockspec` in the current directory)
+
 ```bash
-# install it locally (based on the `.rockspec` in the current directory)
 $ luarocks make
 ```
 
+2. Package the plugin
+
 ```bash
-# pack the installed rock
 $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 ```
 
