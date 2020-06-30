@@ -37,7 +37,7 @@ This plugin is compatible with DB-less mode.
 
 ### Enabling the plugin on a Service
 
-#### Configure this plugin on a Service with database:
+#### With database:
 
 ```bash
   $ curl -X POST http://kong:8001/services/{service}/plugins \
@@ -48,7 +48,7 @@ This plugin is compatible with DB-less mode.
 
 `service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
-#### Configure this plugin on a Service without a database:
+#### Without a database:
 ```bash
   plugins:
   - name: reedelk-transformer
@@ -60,7 +60,7 @@ This plugin is compatible with DB-less mode.
 
 ### Enabling the plugin on a Route
 
-#### Configure this plugin on a Route with database:
+#### With database:
 
 ```bash
   $ curl -X POST http://kong:8001/routes/{route_id}/plugins \
@@ -71,7 +71,7 @@ This plugin is compatible with DB-less mode.
 
 `route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
-#### Configure this plugin on a Route without a database:
+#### Without a database:
 ```bash
   plugins:
   - name: reedelk-transformer
