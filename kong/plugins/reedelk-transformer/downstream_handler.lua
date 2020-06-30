@@ -45,7 +45,7 @@ function _M.handle_body(conf)
   local chunks = concat(ctx.rt_body_chunks)
   local respbody = {}
 
-  -- Call reedhub flow
+  -- Call Reedelk flow
   body, respcode, respheaders = http.request {
   	method = kong.request.get_method(),
   	url = conf.downstream_transformer_url,

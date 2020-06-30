@@ -13,7 +13,7 @@ function _M.execute(conf)
   local payload = kong.request.get_raw_body()
   local respbody = {} 
 
-  -- Call reedhub flow
+  -- Call Reedelk flow
   body, respcode, respheaders = http.request {
     method = kong.request.get_method(),
     url = conf.upstream_transformer_url,
