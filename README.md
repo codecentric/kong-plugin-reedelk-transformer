@@ -49,6 +49,8 @@ This plugin is compatible with DB-less mode.
 `service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
 #### Without a database:
+Add the following to the kong.yml configuration file:
+
 ```bash
   plugins:
   - name: reedelk-transformer
@@ -72,6 +74,8 @@ This plugin is compatible with DB-less mode.
 `route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
 #### Without a database:
+Add the following to the kong.yml configuration file:
+
 ```bash
   plugins:
   - name: reedelk-transformer
