@@ -4,6 +4,8 @@ The Reedelk transformer plugin allows to transform the upstream request body or 
 
 ## Installation
 
+## Installation
+
 1. The [LuaRocks](http://luarocks.org) package manager must be [Installed](https://github.com/luarocks/luarocks/wiki/Download).
 
 2. [Kong](https://getkong.org) must be [Installed](https://getkong.org/install/) and you must be familiar with using and configuring Kong.
@@ -46,7 +48,7 @@ This plugin is compatible with DB-less mode.
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform/
+`service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform
 
 #### Without a database:
 Add the following to the kong.yml configuration file:
@@ -71,7 +73,7 @@ Add the following to the kong.yml configuration file:
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform/
+`route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations e.g. http://localhost:8888/apiabledev/transform
 
 #### Without a database:
 Add the following to the kong.yml configuration file:
