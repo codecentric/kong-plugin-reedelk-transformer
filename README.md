@@ -46,7 +46,7 @@ Configure this plugin on a Service by making the following request:
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`service`: the `id` or `name` of the Service that this plugin configuration will target. The upstream_transformer_url and downstream_transformer_url are the properties to define with the URL of the Reedelk REST flow endpoints to be invoked for the request/response transformations.
+`service`: the `id` or `name` of the Service that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
 ### Enabling the plugin on a Route
 
@@ -59,7 +59,7 @@ Configure this plugin on a Route with:
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
-`route_id`: the `id` of the Route that this plugin configuration will target. The upstream_transformer_url and downstream_transformer_url are the properties to define with the URL of the Reedelk REST flow endpoints to be invoked for the request/response transformations.
+`route_id`: the `id` of the Route that this plugin configuration will target. The `upstream_transformer_url` and `downstream_transformer_url` are the URL of the Reedelk REST flow endpoint to be invoked for the upstream/downstream request/response transformations.
 
 ## Building and Packaging using LuaRocks
 
