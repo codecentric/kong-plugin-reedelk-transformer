@@ -10,7 +10,7 @@ Please note, in order to use the Reedelk plugin for Kong, you must first install
 * Install Reedelk IntelliJ flow designer plugin from IntelliJ Marketplace: From IntelliJ Preferences > Plugin > Marketplace search ‘Reedelk’, install the plugin and restart IntelliJ.
 
 * Manually install Reedelk IntelliJ flow designer plugin: download the plugin from the [Reedelk releases](https://www.reedelk.com/documentation/releases) page.
-From IntelliJ Preferences > Plugin > Settings icon > Install Plugin From Disk ...
+From IntelliJ Preferences > Plugin > Settings icon > Install Plugin From Disk and restart IntelliJ.
 
 ## Installation
 
