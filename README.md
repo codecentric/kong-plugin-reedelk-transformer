@@ -126,49 +126,28 @@ Follow these steps to set up a running kong with reedelk-transformer plugin inst
 
 1. Make sure docker is installed
 
-2. Clone the kong-plugin-reedelk-transformer:
-```bash
-git clone https://github.com/reedelk/kong-plugin-reedelk-transformer.git
-
-cd kong-plugin-reedelk-transformer
-```
-
-3. Build kong-reedelk docker image containing the the reedelk-transformer plugin:
-```bash
-docker build -t kong-reedelk:1.0.0 .
-```
-
-4. Build kong-reedelk docker image containing the the reedelk-transformer plugin:
-```bash
-docker build -t kong-reedelk:1.0.0 .
-```
-
-5. Run the kong-reedelk image just created:
+2. Run the kong-reedelk image just created:
 ```bash
 docker run -d --name kong-reedelk \
-     -e "KONG_DATABASE=off" \
-     -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
-     -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
-     -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
-     -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
-     -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
-     -p 8000:8000 \
-     -p 8443:8443 \
-     -p 127.0.0.1:8001:8001 \
-     -p 127.0.0.1:8444:8444 \
-     kong-reedelk:1.0.0
+            -e "KONG_DATABASE=off" \
+            -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
+            -p 8000:8000 \
+            -p 8443:8443 \
+            -p 127.0.0.1:8001:8001 \
+            -p 127.0.0.1:8444:8444 \
+            reedelk/kong-reedelk:1.0.0
 ```
 
-6. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
+3. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
 ```bash
 http://localhost:8001/plugins
 ```
 
-7. Open IntelliJ and create a new Reedelk project.
+4. Open IntelliJ and create a new Reedelk project.
 
-8. Start the new Reedelk project.
+5. Start the new Reedelk project.
 
-9. Test the downstream transform plugin:
+6. Test the downstream transform plugin:
 ```bash
 http://localhost:8000/transform
 ```
