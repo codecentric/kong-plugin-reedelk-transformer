@@ -130,7 +130,7 @@ Preconditions:
 
 * [Reedelk IntelliJ Flow Designer Plugin](https://www.reedelk.com/documentation/intellijplugin) must be [Installed](https://www.reedelk.com/documentation/intellijplugin) on your IntelliJ distribution.
 
-Follow these steps to create a 
+Follow these steps:
 1. Run the kong-reedelk image:
 ```bash
 docker run -d --name kong-reedelk \
