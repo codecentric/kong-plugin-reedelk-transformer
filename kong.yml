@@ -1,0 +1,16 @@
+_format_version: "1.1"
+
+services:
+- name: upstream-service
+  url: https://www.reedelk.com/tutorials/upstream/service
+  plugins:
+  - name: reedelk-transformer
+    service: upstream-service
+    config:
+     downstream_transformer_url: "http://host.docker.internal:8282/api/message"
+  routes:
+  - name: transform-route
+    protocols: ["http", "https"]
+    methods: ["GET", "POST"]
+    paths:
+    - /transform
