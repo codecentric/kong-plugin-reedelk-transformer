@@ -150,7 +150,7 @@ docker run -d --name kong-reedelk \
 curl http://localhost:8001/plugins
 ```
 
-3. Open IntelliJ and create a new Reedelk project. The new project contains a 'POST Hello World' flow that we are going to use as integration flow to be invoked by the downstream transformer.
+3. Open IntelliJ and create a new Reedelk project. The newly created project contains a 'POST Hello World' flow that we are going to use as integration flow to be invoked by the downstream transformer.
 
 4. Start the new Reedelk project by clicking on the 'Play' button next to the Reedelk runtime run configuration.
 
