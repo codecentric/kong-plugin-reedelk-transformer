@@ -120,7 +120,7 @@ $ luarocks make
 $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 ```
 
-## Getting started with plugin development
+## Getting started with Kong Reedelk Transformer plugin
 You can get started with the development by using the provided Dockerfile which creates an image with the reedelk-transformer plugin. The default image has a default route /transform on port 8000.
 Follow these steps to set up a running kong with reedelk-transformer plugin installed:
 
