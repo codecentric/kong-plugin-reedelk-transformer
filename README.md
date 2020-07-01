@@ -129,8 +129,6 @@ Follow these steps to set up a running kong with reedelk-transformer plugin inst
 2. Run the kong-reedelk image just created:
 ```bash
 docker run -d --name kong-reedelk \
-            -e "KONG_DATABASE=off" \
-            -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
             -p 8000:8000 \
             -p 8443:8443 \
             -p 127.0.0.1:8001:8001 \
