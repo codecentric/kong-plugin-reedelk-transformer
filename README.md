@@ -120,8 +120,6 @@ $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 
 ## Kong Reedelk Transformer plugin 'Hello World'
 
-In this example we are going to use pre-packaged Reedelk docker images with Kong and reedelk-transformer plugin already installed. The kong-reedelk docker images can be found on [Dockerhub](https://hub.docker.com/repository/docker/reedelk/kong-reedelk). The default image is pre-configured to use the following [kong.yml](https://github.com/reedelk/kong-plugin-reedelk-transformer/blob/master/kong.yml) file which defines an [upstream service](https://www.reedelk.com/tutorials/upstream/service) mapped on route http://localhost:8000/transform and invokes a downstream transformer with the reedelk-transformer plugin. The configured downstream transformer integration flow URL is: http://host.docker.internal:8282/api/message. In the following steps we will run kong-reedelk docker image and then create a new Reedelk project containing the integration flow to be invoked by the downstream transformer.
-
 Preconditions:
 
 * [Docker](https://www.docker.com/) must be [Installed](https://www.docker.com/get-started).
@@ -130,7 +128,13 @@ Preconditions:
 
 * [Reedelk IntelliJ Flow Designer Plugin](https://www.reedelk.com/documentation/intellijplugin) must be [Installed](https://www.reedelk.com/documentation/intellijplugin) on your IntelliJ distribution.
 
-Follow these steps:
+
+In this example we are going to use pre-packaged Reedelk docker images with Kong and reedelk-transformer plugin already installed. The kong-reedelk docker images can be found on [Dockerhub](https://hub.docker.com/repository/docker/reedelk/kong-reedelk). 
+
+The default image is pre-configured to use the following [kong.yml](https://github.com/reedelk/kong-plugin-reedelk-transformer/blob/master/kong.yml) file which defines an [upstream service](https://www.reedelk.com/tutorials/upstream/service) mapped on route http://localhost:8000/transform and invokes a downstream transformer with the reedelk-transformer plugin. The configured downstream transformer integration flow URL is: http://host.docker.internal:8282/api/message. 
+
+In the following steps we will run kong-reedelk docker image and then create a new Reedelk project containing the integration flow to be invoked by the downstream transformer:
+
 1. Run the kong-reedelk image:
 ```bash
 docker run -d --name kong-reedelk \
