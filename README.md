@@ -5,8 +5,6 @@ The Reedelk transformer plugin allows to transform the upstream request body or 
 ## Prerequisites for integrating Reedelk and Kong
 Please note, in order to use the Reedelk plugin for Kong, you must first install the Reedelk IntelliJ IDEA plugin.
 
-
-
 * Install Reedelk IntelliJ flow designer plugin from IntelliJ Marketplace: From IntelliJ Preferences > Plugin > Marketplace search ‘Reedelk’, install the plugin and restart IntelliJ.
 
 * Manually install Reedelk IntelliJ flow designer plugin: download the plugin from the [Reedelk releases](https://www.reedelk.com/documentation/releases) page.
@@ -120,13 +118,20 @@ $ luarocks make
 $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 ```
 
-## Getting started with Kong Reedelk Transformer plugin
-You can get started with the development by using the provided Dockerfile which creates an image with the reedelk-transformer plugin. The default image has a default route /transform on port 8000.
-Follow these steps to set up a running kong with reedelk-transformer plugin installed:
+## Kong Reedelk Transformer plugin 'Hello World'
 
-1. Make sure docker is installed
+In this example we are going to use pre-packaged Reedelk docker images with Kong and reedelk-transformer plugin already installed. The kong-reedelk docker images can be found on [Dockerhub](https://hub.docker.com/repository/docker/reedelk/kong-reedelk). The default image is pre-configured to use the following [kong.yml](https://github.com/reedelk/kong-plugin-reedelk-transformer/blob/master/kong.yml) file which defines an [upstream service](https://www.reedelk.com/tutorials/upstream/service) mapped on route http://localhost:8000/transform and invokes a downstream transformer with the reedelk-transformer plugin. The configured downstream transformer integration flow URL is: http://host.docker.internal:8282/api/message. In the following steps we will run kong-reedelk docker image and then create a new Reedelk project containing the integration flow to be invoked by the downstream transformer.
 
-2. Run the kong-reedelk image just created:
+Preconditions:
+
+* [Docker](https://www.docker.com/) must be [Installed](https://www.docker.com/get-started).
+
+* [IntelliJ IDEA IDE](https://www.jetbrains.com/idea/) must be [Installed](https://www.jetbrains.com/idea/download)
+
+* [Reedelk IntelliJ Flow Designer Plugin](https://www.reedelk.com/documentation/intellijplugin) must be [Installed](https://www.reedelk.com/documentation/intellijplugin) on your IntelliJ distribution.
+
+Follow these steps to create a 
+1. Run the kong-reedelk image:
 ```bash
 docker run -d --name kong-reedelk \
             -p 8000:8000 \
@@ -136,19 +141,17 @@ docker run -d --name kong-reedelk \
             reedelk/kong-reedelk:1.0.0
 ```
 
-3. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
+2. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
 ```bash
-http://localhost:8001/plugins
+curl http://localhost:8001/plugins
 ```
 
-4. Open IntelliJ and create a new Reedelk project.
+3. Open IntelliJ and create a new Reedelk project. The new project contains a 'POST Hello World' flow that we are going to use as integration flow to be invoked by the downstream transformer.
 
-5. Start the new Reedelk project.
+4. Start the new Reedelk project by clicking on the 'Play' button next to the Reedelk runtime run configuration.
 
-6. Test the downstream transform plugin:
-```bash
-http://localhost:8000/transform
-```
+5. Call the Kong route [http://localhost:8000/transform](http://localhost:8000/transform). The result should be: 'Hello World John'.
+
 
 ## Credits
 
