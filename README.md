@@ -123,9 +123,7 @@ $ luarocks pack kong-plugin-reedelk-transformer 0.1.0-1
 Preconditions:
 
 * [Docker](https://www.docker.com/) must be [Installed](https://www.docker.com/get-started).
-
 * [IntelliJ IDEA IDE](https://www.jetbrains.com/idea/) must be [Installed](https://www.jetbrains.com/idea/download)
-
 * [Reedelk IntelliJ Flow Designer Plugin](https://www.reedelk.com/documentation/intellijplugin) must be [Installed](https://www.reedelk.com/documentation/intellijplugin) on your IntelliJ distribution.
 
 
