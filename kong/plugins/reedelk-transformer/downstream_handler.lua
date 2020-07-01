@@ -46,7 +46,7 @@ function _M.handle_body(conf)
   local respbody = {}
 
   -- Call Reedelk flow
-  body, respcode, respheaders = http.request {
+  local result, respcode, respheaders = http.request {
   	method = 'POST',
   	url = conf.downstream_transformer_url,
   	source = ltn12.source.string(chunks),
