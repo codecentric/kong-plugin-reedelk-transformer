@@ -154,6 +154,8 @@ curl http://localhost:8001/plugins
 
 5. Call the Kong route [http://localhost:8000/transform](http://localhost:8000/transform). The result should be: 'Hello World John'.
 
+## Supported Kong Releases
+The Kong Reedelk Transformer Plugin is supported from Kong version >= 1.5.1.
 
 ## Credits
 
