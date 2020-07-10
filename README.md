@@ -135,12 +135,12 @@ In the following steps we will run kong-reedelk docker image and then create a n
 
 1. Run the kong-reedelk image:
 ```bash
-docker run -d --name kong-reedelk \
+docker run -d --name kong-reedelk-transformer-plugin \
             -p 8000:8000 \
             -p 8443:8443 \
             -p 127.0.0.1:8001:8001 \
             -p 127.0.0.1:8444:8444 \
-            reedelk/kong-reedelk:1.0.0
+            reedelk/kong-reedelk-transformer-plugin:1.0.0
 ```
 
 2. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
