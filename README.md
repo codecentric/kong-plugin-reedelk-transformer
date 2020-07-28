@@ -59,7 +59,7 @@ This plugin is compatible with DB-less mode.
 ```bash
   $ curl -X POST http://kong:8001/services/{service}/plugins \
     --data "name=reedelk-transformer" \
-    --data "upstream_transformer_url=http://myhost/upstream/transform"
+    --data "upstream_transformer_url=http://myhost/upstream/transform" \
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
@@ -84,7 +84,7 @@ Add the following to the kong.yml configuration file:
 ```bash
   $ curl -X POST http://kong:8001/routes/{route_id}/plugins \
     --data "name=reedelk-transformer" \
-    --data "upstream_transformer_url=http://myhost/upstream/transform"
+    --data "upstream_transformer_url=http://myhost/upstream/transform" \
     --data "downstream_transformer_url=http://myhost/downstream/transform"
 ```
 
