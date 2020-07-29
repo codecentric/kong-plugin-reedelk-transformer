@@ -1,5 +1,5 @@
 package = "kong-plugin-reedelk-transformer"
-version = "0.1.0-1"
+version = "0.2.0-1"
 
 local pluginName = package:match("^kong%-plugin%-(.+)$")
 

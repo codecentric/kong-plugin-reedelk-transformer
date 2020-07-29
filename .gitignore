@@ -4,3 +4,4 @@ lua_modules
 .settings/
 commands.txt
 .DS_Store
+.idea/
