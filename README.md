@@ -178,8 +178,8 @@ Deployment Strategy:
 * 1.5.x
 
 Deployment Strategy:
-* "Classic": Full Support
-* "DB-less": Full Support
+* "Classic and K4K8s": Full Support
+* "K4K8s": Full Support
 * "Hybrid mode": Full Support
 
 ## Credits
