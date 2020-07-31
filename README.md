@@ -169,22 +169,18 @@ curl http://localhost:8001/plugins
 * 1.5.x
 
 Deployment Strategy:
-"Classic": Full Support
-"DB-less": Full Support
-"Hybrid mode": Full Support
+* "Classic": Full Support
+* "DB-less": Full Support
+* "Hybrid mode": Full Support
 
 #### Enterprise Edition
 
 * 1.5.x
 
 Deployment Strategy:
-"Classic": Full Support
-"DB-less": Full Support
-"Hybrid mode": Full Support
-
-
-
-The Kong Reedelk Transformer Plugin is supported from Kong version >= 1.5.1.
+* "Classic": Full Support
+* "DB-less": Full Support
+* "Hybrid mode": Full Support
 
 ## Credits
 
