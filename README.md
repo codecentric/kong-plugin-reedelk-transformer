@@ -147,7 +147,7 @@ docker run -d --name kong-reedelk-transformer-plugin \
             -p 8443:8443 \
             -p 127.0.0.1:8001:8001 \
             -p 127.0.0.1:8444:8444 \
-            reedelk/kong-reedelk-transformer-plugin:0.1.0
+            reedelk/kong-reedelk-transformer-plugin:latest
 ```
 
 2. Make sure that kong is up and running correctly with reedelk-transformer plugin installed:
